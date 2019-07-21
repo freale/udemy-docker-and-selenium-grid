@@ -22,14 +22,9 @@ public class BaseTest {
         DesiredCapabilities cap;
         if(browser.contentEquals("CHROME")){
             cap = DesiredCapabilities.chrome();
-
-            //System. setProperty("webdriver.chrome.driver", ".\\Drivers\\chromedriver.exe");
-            //driver=new ChromeDriver();
         }
         else {
             cap = DesiredCapabilities.firefox();
-            //System.setProperty("webdriver.firefox.marionette",".\\Drivers\\geckodriver.exe");
-            //driver = new FirefoxDriver();
         }
 
         cap.setCapability("version","");
